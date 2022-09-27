@@ -39,13 +39,14 @@
 			gap: 0.5rem;
 			font-size: 14px;
 
-			&.positive {
-				color: green;
-			}
+		}
 
-			&.negative {
-				color: red;
-			}
+		&.positive {
+			color: green;
+		}
+
+		&.negative {
+			color: red;
 		}
 
 		.icon {
