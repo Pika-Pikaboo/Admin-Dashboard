@@ -12,21 +12,24 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import SettingsIcon from '@mui/icons-material/Settings';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import BarChartIcon from '@mui/icons-material/BarChart';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
 	return (
 		<div className="sidebar">
 			<div className="top">
-				<span className="logo">Marn Htet Zan</span>
+				<Link to="/" style={{textDecoration: "none"}}>
+					<span className="logo">Marn Htet Zan</span>
+				</Link>
 			</div>
 			<hr/>
 			<div className="center">
 				<ul>
 					<p className="title">MAIN</p>
-					<li><DashboardIcon className="icon"/><span>Dashboard</span></li>
+					<Link to="/" style={{textDecoration:"none"}}><li><DashboardIcon className="icon"/><span>Dashboard</span></li></Link>
 					<p className="title">LISTS</p>
-					<li><PersonOutlineOutlinedIcon className="icon"/><span>Users</span></li>
-					<li><InventoryIcon className="icon"/><span>Products</span></li>
+					<Link to="/users" style={{textDecoration: "none"}}><li><PersonOutlineOutlinedIcon className="icon"/><span>Users</span></li></Link>
+					<Link to="/products" style={{textDecoration:"none"}}><li><InventoryIcon className="icon"/><span>Products</span></li></Link>
 					<li><CategoryIcon className="icon"/><span>Orders</span></li>
 					<li><LocalShippingIcon className="icon"/><span>Deliver</span></li>
 					<p className="title">USEFUL</p>
@@ -37,8 +40,8 @@ const Sidebar = () => {
 					<li><LoginIcon className="icon"/><span>Logs</span></li>
 					<li><SettingsIcon className="icon"/><span>Settings</span></li>
 					<p className="title">USER</p>
-					<li><AccountCircleIcon className="icon"/><span>Profile</span></li>
-					<li><LogoutIcon className="icon"/><span>Logout</span></li>
+					<Link to="/users/test" style={{textDecoration:"none"}}><li><AccountCircleIcon className="icon"/><span>Profile</span></li></Link>
+					<Link to="/users/new" style={{textDecoration:"none"}}><li><LogoutIcon className="icon"/><span>Logout</span></li></Link>
 				</ul>
 			</div>
 			<div className="bottom">

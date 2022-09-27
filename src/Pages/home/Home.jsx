@@ -4,6 +4,7 @@ import Navbar from '../../Components/navbar/Navbar.jsx';
 import Widget from '../../Components/widgets/Widget.jsx';
 import Feature from '../../Components/feature/Feature.jsx';
 import Chart from '../../Components/chart/Chart.jsx';
+import List from '../../Components/table/Table.jsx';
 
 const Home = () => {
 	return (
@@ -23,6 +24,7 @@ const Home = () => {
 				</div>
 				<div className="list-container">
 					<div className="list-title">Lastest Transactions</div>
+					<List/>
 				</div>
 			</div>
 		</div>
