@@ -5,11 +5,16 @@ import List from './Pages/list/List.jsx';
 import Single from './Pages/single/Single.jsx';
 import New from './Pages/new/New.jsx';
 import { userInputs } from './formSource.jsx';
+import './styles/Dark.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useContext } from 'react';
+import { DarkModeContext } from './context/darkModeContext.jsx';
 
 function App() {
+  const { darkMode } = useContext(DarkModeContext);
   return (
-    <BrowserRouter>
+    <div className={darkMode ? "app dark" : "app"}>
+      <BrowserRouter>
         <Routes>
           <Route path="/">
             <Route index element={<Home/>}></Route>
@@ -27,6 +32,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+    </div>
   );
 }
 

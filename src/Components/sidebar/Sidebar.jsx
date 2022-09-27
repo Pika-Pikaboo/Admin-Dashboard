@@ -13,8 +13,11 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import { Link } from 'react-router-dom';
+import { DarkModeContext } from "../../context/darkModeContext";
+import { useContext } from "react";
 
 const Sidebar = () => {
+	const { dispatch } = useContext(DarkModeContext);
 	return (
 		<div className="sidebar">
 			<div className="top">
@@ -45,8 +48,8 @@ const Sidebar = () => {
 				</ul>
 			</div>
 			<div className="bottom">
-				<div className="colorOptions"></div>
-				<div className="colorOptions"></div>
+				<div className="colorOptions" onClick={() => dispatch({type: "LIGHT"})}></div>
+				<div className="colorOptions" onClick={() => dispatch({type: "DARK"})}></div>
 			</div>
 		</div>
 	)
