@@ -12,6 +12,10 @@ const Home = () => {
 			<Sidebar/>
 			<div className="homeContainer">
 				<Navbar/>
+				<picture>
+					<source srcset="https://tailwindcss.com/_next/static/media/docs-dark@tinypng.1bbe175e.png" type="image/avif" />
+					<img src="https://tailwindcss.com/_next/static/media/docs-dark@tinypng.1bbe175e.png" alt="" loading="lazy"/>
+				</picture>
 				<div className="widgets">
 					<Widget type="user"/>
 					<Widget type="order"/>
