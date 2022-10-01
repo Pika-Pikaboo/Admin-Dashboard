@@ -1,14 +1,13 @@
 import { useState } from 'react';
 import './New.scss';
-import localforage from 'localforage';
 import Sidebar from '../../Components/sidebar/Sidebar.jsx';
 import Navbar from '../../Components/navbar/Navbar.jsx';
 import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
 
 const New = ({ inputs, title }) => {
-	const [file, setFile] = useState("");
-	return (
-		<div className="new">
+  const [file, setFile] = useState("");
+  return (
+    <div className="new">
       <Sidebar />
       <div className="newContainer">
         <Navbar />
@@ -52,7 +51,7 @@ const New = ({ inputs, title }) => {
         </div>
       </div>
     </div>
-	)
+  )
 }
 
 export default New;

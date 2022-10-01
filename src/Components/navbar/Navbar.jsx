@@ -16,7 +16,7 @@ const Navbar = () => {
 	return (
 		<div className="navbar">
 			<picture>
-				<source srcset="https://tailwindcss.com/_next/static/media/docs@tinypng.d9e4dcdc.png" type="image/avif" />
+				<source srcSet="https://tailwindcss.com/_next/static/media/docs@tinypng.d9e4dcdc.png" type="image/avif" />
 				<img src="https://tailwindcss.com/_next/static/media/docs@tinypng.d9e4dcdc.png" alt="" loading="lazy"/>
 			</picture>
 			<div className="wrapper">
