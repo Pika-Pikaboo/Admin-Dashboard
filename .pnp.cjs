@@ -41,6 +41,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:4ab183981281644331fa65cfb12330892758d5d8f8dbb32c75081a0d3c6b230f454729fda9cf09306f0a17d4507be96ccbcd55f53deaa0b05ed28e54112d2767#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:4ab183981281644331fa65cfb12330892758d5d8f8dbb32c75081a0d3c6b230f454729fda9cf09306f0a17d4507be96ccbcd55f53deaa0b05ed28e54112d2767#npm:13.5.0"],\
+            ["localforage", "npm:1.10.0"],\
             ["prop-types", "npm:15.8.1"],\
             ["react", "npm:18.2.0"],\
             ["react-circular-progressbar", "virtual:4ab183981281644331fa65cfb12330892758d5d8f8dbb32c75081a0d3c6b230f454729fda9cf09306f0a17d4507be96ccbcd55f53deaa0b05ed28e54112d2767#npm:2.1.0"],\
@@ -7949,6 +7950,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:4ab183981281644331fa65cfb12330892758d5d8f8dbb32c75081a0d3c6b230f454729fda9cf09306f0a17d4507be96ccbcd55f53deaa0b05ed28e54112d2767#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:4ab183981281644331fa65cfb12330892758d5d8f8dbb32c75081a0d3c6b230f454729fda9cf09306f0a17d4507be96ccbcd55f53deaa0b05ed28e54112d2767#npm:13.5.0"],\
+            ["localforage", "npm:1.10.0"],\
             ["prop-types", "npm:15.8.1"],\
             ["react", "npm:18.2.0"],\
             ["react-circular-progressbar", "virtual:4ab183981281644331fa65cfb12330892758d5d8f8dbb32c75081a0d3c6b230f454729fda9cf09306f0a17d4507be96ccbcd55f53deaa0b05ed28e54112d2767#npm:2.1.0"],\
@@ -10428,6 +10430,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["immediate", [\
+        ["npm:3.0.6", {\
+          "packageLocation": "./.yarn/cache/immediate-npm-3.0.6-c27588a2d3-f9b3486477.zip/node_modules/immediate/",\
+          "packageDependencies": [\
+            ["immediate", "npm:3.0.6"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["immer", [\
         ["npm:9.0.15", {\
           "packageLocation": "./.yarn/cache/immer-npm-9.0.15-6c734225db-92e3d63e81.zip/node_modules/immer/",\
@@ -11923,6 +11934,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["lie", [\
+        ["npm:3.1.1", {\
+          "packageLocation": "./.yarn/cache/lie-npm-3.1.1-91350720d9-6da9f2121d.zip/node_modules/lie/",\
+          "packageDependencies": [\
+            ["lie", "npm:3.1.1"],\
+            ["immediate", "npm:3.0.6"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["lilconfig", [\
         ["npm:2.0.6", {\
           "packageLocation": "./.yarn/cache/lilconfig-npm-2.0.6-6231346eaf-40a3cd72f1.zip/node_modules/lilconfig/",\
@@ -11965,6 +11986,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/loader-utils-npm-3.2.0-02250d00d7-c7b9a8dc4b.zip/node_modules/loader-utils/",\
           "packageDependencies": [\
             ["loader-utils", "npm:3.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["localforage", [\
+        ["npm:1.10.0", {\
+          "packageLocation": "./.yarn/cache/localforage-npm-1.10.0-cf9ea9a436-f2978b434d.zip/node_modules/localforage/",\
+          "packageDependencies": [\
+            ["localforage", "npm:1.10.0"],\
+            ["lie", "npm:3.1.1"]\
           ],\
           "linkType": "HARD"\
         }]\

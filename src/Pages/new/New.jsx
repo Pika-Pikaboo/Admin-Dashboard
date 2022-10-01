@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './New.scss';
+import localforage from 'localforage';
 import Sidebar from '../../Components/sidebar/Sidebar.jsx';
 import Navbar from '../../Components/navbar/Navbar.jsx';
 import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
@@ -22,7 +23,7 @@ const New = ({ inputs, title }) => {
                   ? URL.createObjectURL(file)
                   : "https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg"
               }
-              alt=""
+              alt="Profile Picture"
             />
           </div>
           <div className="right">
